@@ -1,14 +1,11 @@
-import { useState } from 'react'
-import './App.css'
+import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   return (
-    <>
-      <h1 class="text-3xl font-bold underline text-center">
-    Hello world!
-  </h1>
-    </>
-  )
+    <AuthProvider>
+      <YourAppComponents />
+    </AuthProvider>
+  );
 }
 
-export default App
+export default App;
